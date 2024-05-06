@@ -23,7 +23,8 @@ public class SQLiteDbContext
         {
             await Database.CreateTableAsync<Burger>();
             await Database.CreateTableAsync<Otzav>();
-            await Database.CreateTableAsync<BurgerCombo>();
+            await Database.CreateTableAsync<BCombo>();
+            await Database.CreateTableAsync<ComboAndBurger>();
         }
     }
 
@@ -32,7 +33,6 @@ public class SQLiteDbContext
         await InitializeDatabase();
 
         var burgers = await Database.Table<Burger>().ToListAsync();
-
         return burgers;
     }
 
@@ -55,10 +55,74 @@ public class SQLiteDbContext
         return await Database.DeleteAsync(burger);
     }
 
-    public async Task<List<BurgerCombo>> GetAllCombos()
+    public async Task<List<BCombo>> GetAllCombos()
     {
         await InitializeDatabase();
-        var combos = await Database.Table<BurgerCombo>().ToListAsync();
+        var combos = await Database.Table<BCombo>().ToListAsync();
         return combos;
     } 
+
+
+    public async Task<int> AddCombo(BCombo burgerCombo){
+        await InitializeDatabase();
+        if (burgerCombo.Id != 0)
+        {
+            return await Database.UpdateAsync(burgerCombo);
+        }
+        else
+        {
+            return await Database.InsertAsync(burgerCombo);
+        }
+    }
+    public async Task<int> DeleteCombo(BCombo burgerCombo)
+    {
+        await InitializeDatabase();
+        return await Database.DeleteAsync(burgerCombo);
+    }
+    public async Task<List<Otzav>> GetAllOtzav()
+    {
+        await InitializeDatabase();
+        var otzavs = await Database.Table<Otzav>().ToListAsync();
+        return otzavs;
+    }
+    public async Task<int> AddOtzav(Otzav otzav)
+    {
+        await InitializeDatabase();
+        if (otzav.Id != 0)
+        {
+            return await Database.UpdateAsync(otzav);
+        }
+        else
+        {
+            return await Database.InsertAsync(otzav);
+        }
+    }
+    public async Task<int> DeleteOtzav(Otzav otzav)
+    {
+        await InitializeDatabase();
+        return await Database.DeleteAsync(otzav);
+    }
+    public async Task<List<ComboAndBurger>> GetAllComboAndBurgers()
+    {
+        await InitializeDatabase();
+        var otzavs = await Database.Table<ComboAndBurger>().ToListAsync();
+        return otzavs;
+    }
+    public async Task<int> AddComboAndBurger(ComboAndBurger otzav)
+    {
+        await InitializeDatabase();
+        if (otzav.Id != 0)
+        {
+            return await Database.UpdateAsync(otzav);
+        }
+        else
+        {
+            return await Database.InsertAsync(otzav);
+        }
+    }
+    public async Task<int> DeleteComboAndBurger(ComboAndBurger otzav)
+    {
+        await InitializeDatabase();
+        return await Database.DeleteAsync(otzav);
+    }
 }

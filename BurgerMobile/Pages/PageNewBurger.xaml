@@ -8,8 +8,12 @@
         <Entry x:Name="BTitle" FontSize="17"></Entry>
         <Label Text="Description" FontSize="17" HorizontalOptions="Center"/>
         <Entry x:Name="BDescription" FontSize="17"></Entry>
+        <Label Text="Sum" FontSize="17" HorizontalOptions="Center"/>
+        <Entry x:Name="BSum" FontSize="17"></Entry>
         <Label Text="Photo" FontSize="17" HorizontalOptions="Center"/>
-        <Button Text="Save" FontSize="17" Clicked="Button_Clicked"></Button>
-        <Picker></Picker>
+        <!--<Image x:Name="BPhoto" WidthRequest="400"></Image>
+        <Button Text="Загрузить" FontSize="17" x:Name="GotPhoto" Clicked="GotPhoto_Clicked"></Button>-->
+        <Button Text="Сохранить" FontSize="17" Clicked="Button_Clicked"></Button>
+        <Button Text="Назад" FontSize="17" Clicked="Back_Clicked" x:Name="Back"></Button>
     </VerticalStackLayout>
 </ContentPage>

@@ -79,6 +79,9 @@
 	  <MauiXaml Update="Pages\PageNewCombo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\PageNewOtzav.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\PageOtzav.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

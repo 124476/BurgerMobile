@@ -60,6 +60,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageNew
 build_metadata.AdditionalFiles.TargetPath = Pages\PageNewCombo.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\PageNewCombo.xaml
 
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageNewOtzav.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageNewOtzav.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageNewOtzav.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageNewOtzav.xaml
+
 [C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageOtzav.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageOtzav.xaml

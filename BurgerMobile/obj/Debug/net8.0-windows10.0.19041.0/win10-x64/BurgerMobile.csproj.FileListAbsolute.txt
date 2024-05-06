@@ -181,3 +181,4 @@ C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\obj\Debug\net8.0-windows1
 C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Management.Deployment.Projection.dll
+C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\BurgerMobile.sourcelink.json

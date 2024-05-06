@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace BurgerMobile.Models
 {
-    public partial class Otzav
+    public partial class ComboAndBurger
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string Text { get; set; }
+        public int BurgerId { get; set; }
+        public int ComboId { get; set; }
     }
 }

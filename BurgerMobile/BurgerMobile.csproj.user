@@ -26,6 +26,9 @@
     <MauiXaml Update="Pages\PageNewCombo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\PageNewOtzav.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\PageOtzav.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
