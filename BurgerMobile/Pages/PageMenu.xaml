@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BurgerMobile.Pages.PageMenu"
+             Title="ВИЛКА И НОЖ">
+    <VerticalStackLayout>
+        <Label 
+            Text="Меню" FontSize="19"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ListView x:Name="ListBurgers">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Title}" FontSize="17"></Label>
+                        <Label Text="{Binding Desctiption}" FontSize="17"></Label>
+                        <Image Source="{Binding BPhoto}" HeightRequest="100" WidthRequest="100"></Image>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="NewBurger" Clicked="NewBurger_Clicked" Text="Новый бургер"></Button>
+    </VerticalStackLayout>
+</ContentPage>

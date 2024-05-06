@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BurgerMobile
+build_property.ProjectDir = C:\Users\Stipo6\source\repos\BurgerMobile\BurgerMobile\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageCombo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageCombo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageCombo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageCombo.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageMain.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageMain.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageMain.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageMain.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageMenu.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageNewBurger.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageNewBurger.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageNewBurger.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageNewBurger.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageNewCombo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageNewCombo.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageNewCombo.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageNewCombo.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Pages/PageOtzav.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Pages.PageOtzav.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageOtzav.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageOtzav.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Stipo6/source/repos/BurgerMobile/BurgerMobile/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BurgerMobile.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

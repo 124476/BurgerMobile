@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BurgerMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BurgerMobile"
+    Shell.FlyoutBehavior="Disabled"
+    Title="BurgerMobile">
+
+    <TabBar>
+        <Tab Title="Главная страница">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:Pages.PageMain}" />
+        </Tab>
+        <Tab Title="Комбо">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:Pages.PageCombo}" />
+        </Tab>
+        <Tab Title="Меню">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:Pages.PageMenu}"/>
+        </Tab>
+        <Tab Title="Отзывы">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:Pages.PageOtzav}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

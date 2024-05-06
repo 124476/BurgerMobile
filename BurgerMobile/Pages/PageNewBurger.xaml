@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BurgerMobile.Pages.PageNewBurger"
+             Title="PageNewBurger">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label Text="Title" FontSize="17" HorizontalOptions="Center"/>
+        <Entry x:Name="BTitle" FontSize="17"></Entry>
+        <Label Text="Description" FontSize="17" HorizontalOptions="Center"/>
+        <Entry x:Name="BDescription" FontSize="17"></Entry>
+        <Label Text="Photo" FontSize="17" HorizontalOptions="Center"/>
+        <Button Text="Save" FontSize="17" Clicked="Button_Clicked"></Button>
+        <Picker></Picker>
+    </VerticalStackLayout>
+</ContentPage>

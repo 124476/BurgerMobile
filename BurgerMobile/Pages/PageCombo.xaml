@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BurgerMobile.Pages.PageCombo"
+             Title="ВИЛКА И НОЖ">
+    <VerticalStackLayout>
+        <Label 
+            Text="Комбо"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="19"/>
+        <ListView x:Name="ListButgerCombo">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Title}" FontSize="17"></Label>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="NewCombo" FontSize="17" Clicked="NewCombo_Clicked" Text="Новое комбо"></Button>
+    </VerticalStackLayout>
+</ContentPage>
