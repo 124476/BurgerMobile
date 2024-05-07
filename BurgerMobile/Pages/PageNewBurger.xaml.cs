@@ -1,4 +1,5 @@
 using BurgerMobile.Models;
+using System.IO;
 
 namespace BurgerMobile.Pages;
 
@@ -16,16 +17,19 @@ public partial class PageNewBurger : ContentPage
             BTitle.Text = contextBurger.Title;
             BSum.Text = contextBurger.Sum;
             BDescription.Text = contextBurger.Description;
+            BPhoto.Source = contextBurger.BPhoto;
+            Del.IsVisible = true;
         }
         else
         {
             contextBurger = new Burger();
+            Del.IsVisible = false;
         }
 	}
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-		if (BTitle.Text != null && BDescription.Text != null && BSum.Text != null)
+		if (BTitle.Text != null && BDescription.Text != null && BSum.Text != null && contextBurger.Photo != null)
 		{
             contextBurger.Title = BTitle.Text;
             contextBurger.Description = BDescription.Text;
@@ -49,17 +53,26 @@ public partial class PageNewBurger : ContentPage
             {
                 using (var memoryStream = new MemoryStream())
                 {
-                    //await stream.CopyToAsync(memoryStream);
-                    //byte[] imageBytes = memoryStream.ToArray();
-                    //burger.BPhoto = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-                    //burger.Photo = imageBytes.ToString();
-                    //BPhoto.Source = burger.BPhoto;
+                    await stream.CopyToAsync(memoryStream);
+                    byte[] imageBytes = memoryStream.ToArray();
+                    contextBurger.Photo = imageBytes;
+                    BPhoto.Source = contextBurger.BPhoto;
                 }
             }
         }
     }
     private async void Back_Clicked(object sender, EventArgs e)
     {
+        await Navigation.PopAsync();
+    }
+
+    private async void Del_Clicked(object sender, EventArgs e)
+    {
+        foreach(var item in (await db.GetAllComboAndBurgers()).Where(x => x.BurgerId == contextBurger.Id))
+        {
+            await db.DeleteComboAndBurger(item);
+        }
+        await db.DeleteBurgerAsyns(contextBurger);
         await Navigation.PopAsync();
     }
 }

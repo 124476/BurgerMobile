@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BurgerMobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+dfc3abb8c0cfe4a7bf7976ee6fb419c75f5ba692")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+36877d71597c907845411bfe0133f9440e22f51b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BurgerMobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BurgerMobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

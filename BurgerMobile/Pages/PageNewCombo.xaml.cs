@@ -12,7 +12,7 @@ public partial class PageNewCombo : ContentPage
 		InitializeComponent();
 		db = new SQLiteDbContext();
         contextCombo = burgerCombo;
-	}
+    }
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
@@ -48,7 +48,7 @@ public partial class PageNewCombo : ContentPage
         }
 		else
 		{
-			DisplayAlert("Ошибка", "Заполните все поля!", "Ок");
+			await DisplayAlert("Ошибка", "Заполните все поля!", "Ок");
 		}
     }
 
@@ -58,6 +58,7 @@ public partial class PageNewCombo : ContentPage
         {
             Burger burger = ListBurgers.SelectedItem as Burger;
             burgers.Remove(burger);
+            ListBurgers.SelectedItem = null;
             Refresh();
         }
     }
@@ -81,7 +82,12 @@ public partial class PageNewCombo : ContentPage
         }
     }
 
-    private async void ContentPage_Loaded(object sender, EventArgs e)
+    private async void Back_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
+
+    private async void ContentPage_Appearing(object sender, EventArgs e)
     {
         burgers = new List<Burger>();
         if (contextCombo != null)
@@ -93,13 +99,23 @@ public partial class PageNewCombo : ContentPage
             }
             BTitle.Text = contextCombo.Title;
             BSum.Text = contextCombo.Sum;
+            Del.IsVisible = true;
             Refresh();
+        }
+        else
+        {
+            Del.IsVisible = false;
         }
         ComboBurgers.ItemsSource = await db.GetAllBurgers();
     }
 
-    private async void Back_Clicked(object sender, EventArgs e)
+    private async void Del_Clicked(object sender, EventArgs e)
     {
+        foreach (var item in (await db.GetAllComboAndBurgers()).Where(x => x.ComboId == contextCombo.Id))
+        {
+            await db.DeleteComboAndBurger(item);
+        }
+        await db.DeleteCombo(contextCombo);
         await Navigation.PopAsync();
     }
 }

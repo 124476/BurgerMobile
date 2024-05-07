@@ -12,5 +12,6 @@ namespace BurgerMobile.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Text { get; set; }
+        public int Kol { get; set; }
     }
 }

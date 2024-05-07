@@ -2,18 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgerMobile.Pages.PageNewBurger"
-             Title="PageNewBurger">
-    <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="Title" FontSize="17" HorizontalOptions="Center"/>
-        <Entry x:Name="BTitle" FontSize="17"></Entry>
-        <Label Text="Description" FontSize="17" HorizontalOptions="Center"/>
-        <Entry x:Name="BDescription" FontSize="17"></Entry>
-        <Label Text="Sum" FontSize="17" HorizontalOptions="Center"/>
-        <Entry x:Name="BSum" FontSize="17"></Entry>
-        <Label Text="Photo" FontSize="17" HorizontalOptions="Center"/>
-        <!--<Image x:Name="BPhoto" WidthRequest="400"></Image>
-        <Button Text="Загрузить" FontSize="17" x:Name="GotPhoto" Clicked="GotPhoto_Clicked"></Button>-->
-        <Button Text="Сохранить" FontSize="17" Clicked="Button_Clicked"></Button>
-        <Button Text="Назад" FontSize="17" Clicked="Back_Clicked" x:Name="Back"></Button>
-    </VerticalStackLayout>
+             Title="ВИЛКА И НОЖ">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center">
+            <Label Text="Название" FontSize="17" HorizontalOptions="Center"/>
+            <Entry x:Name="BTitle" FontSize="17"></Entry>
+            <Label Text="Описание" FontSize="17" HorizontalOptions="Center"/>
+            <Entry x:Name="BDescription" FontSize="17"></Entry>
+            <Label Text="Цена" FontSize="17" HorizontalOptions="Center"/>
+            <Entry x:Name="BSum" FontSize="17"></Entry>
+            <Label Text="Картинка" FontSize="17" HorizontalOptions="Center"/>
+            <Image x:Name="BPhoto" WidthRequest="200" Margin="10,10,10,10"></Image>
+            <Button Text="Загрузить картинку" FontSize="17" x:Name="GotPhoto" Clicked="GotPhoto_Clicked" Margin="0,5,0,0"></Button>
+            <Button Text="Сохранить" FontSize="17" Clicked="Button_Clicked" Margin="0,5,0,5"></Button>
+            <Button Text="Удалить" FontSize="17" Clicked="Del_Clicked"  x:Name="Del" Margin="0,0,0,5"></Button>
+            <Button Text="Назад" FontSize="17" Clicked="Back_Clicked" x:Name="Back"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

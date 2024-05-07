@@ -15,9 +15,15 @@ namespace BurgerMobile.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string Sum { get; set; }
-        //public string Photo { get; set; }
+        public byte[] Photo { get; set; }
 
-        //[JsonIgnore]
-        //public ImageSource BPhoto { get; set; }
+        [Ignore]
+        public ImageSource BPhoto
+        {
+            get
+            {
+                return ImageSource.FromStream(() => new MemoryStream(Photo));
+            }
+        }
     }
 }

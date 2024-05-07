@@ -12,13 +12,13 @@
             <ShellContent
             ContentTemplate="{DataTemplate local:Pages.PageMain}" />
         </Tab>
-        <Tab Title="Комбо">
-            <ShellContent
-            ContentTemplate="{DataTemplate local:Pages.PageCombo}" />
-        </Tab>
         <Tab Title="Меню">
             <ShellContent
             ContentTemplate="{DataTemplate local:Pages.PageMenu}"/>
+        </Tab>
+        <Tab Title="Комбо">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:Pages.PageCombo}" />
         </Tab>
         <Tab Title="Отзывы">
             <ShellContent

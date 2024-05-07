@@ -16,11 +16,6 @@ public partial class PageMenu : ContentPage
 		await Navigation.PushAsync(new PageNewBurger(null));
     }
 
-    private void ContentPage_Loaded(object sender, EventArgs e)
-    {
-        Refresh();
-    }
-
     private async void Refresh()
     {
         ListBurgers.ItemsSource = await db.GetAllBurgers();
@@ -32,5 +27,10 @@ public partial class PageMenu : ContentPage
         {
             await Navigation.PushAsync(new PageNewBurger(ListBurgers.SelectedItem as Burger));
         }
+    }
+
+    private void ContentPage_Appearing(object sender, EventArgs e)
+    {
+        Refresh();
     }
 }

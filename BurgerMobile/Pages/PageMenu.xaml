@@ -3,23 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgerMobile.Pages.PageMenu"
              Title="ВИЛКА И НОЖ"
-             Loaded="ContentPage_Loaded">
+             Appearing="ContentPage_Appearing">
     <ScrollView>
         <VerticalStackLayout>
             <Label 
-                Text="Меню" FontSize="19"
+                Text="Меню" FontSize="23"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <CollectionView x:Name="ListBurgers" HorizontalOptions="Center" SelectionMode="Single" SelectionChanged="ListBurgers_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <StackLayout BackgroundColor="AliceBlue" Margin="10,10,10,5" HorizontalOptions="Center">
-                                <Label Text="{Binding Title}" FontSize="19" Margin="10,5,10,10"></Label>
-                                <Label Text="{Binding Description}" FontSize="15" Grid.Row="1" Margin="10,5,10,10"></Label>
-                                <Image Source="{Binding BPhoto}" HeightRequest="100" WidthRequest="100" Grid.RowSpan="2" Margin="10,10,10,10" BackgroundColor="AliceBlue"></Image>
-                                <Label Text="{Binding Sum}" FontSize="17" Grid.Row="1" Margin="10,5,10,10"></Label>
+                        <Grid BackgroundColor="LightBlue" Margin="10,10,10,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout>
+                                <Label Text="{Binding Title}" FontSize="23" Margin="10,5,10,10" Padding="10,10,0,0"></Label>
+                                <Label Text="{Binding Description}" FontSize="13" Margin="10,5,10,10" Padding="10,10,0,0"></Label>
+                                <Label Text="{Binding Sum}" FontSize="17" Margin="10,5,10,10" Padding="10,10,0,0"></Label>
                             </StackLayout>
+                            <Image Source="{Binding BPhoto, TargetNullValue={StaticResource DefaultImage}}" HeightRequest="100" WidthRequest="100" Grid.Column="1" Margin="10,10,10,10" HorizontalOptions="End"></Image>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

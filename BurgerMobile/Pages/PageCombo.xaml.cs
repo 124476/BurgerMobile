@@ -16,11 +16,6 @@ public partial class PageCombo : ContentPage
         await Navigation.PushAsync(new PageNewCombo(null));
     }
 
-    private void ContentPage_Loaded(object sender, EventArgs e)
-    {
-        Refresh();
-    }
-
     private async void Refresh()
     {
         var combos = await db.GetAllCombos();
@@ -34,5 +29,10 @@ public partial class PageCombo : ContentPage
         {
             await Navigation.PushAsync(new PageNewCombo(ListBurgerCombo.SelectedItem as BCombo));
         }
+    }
+
+    private void ContentPage_Appearing(object sender, EventArgs e)
+    {
+        Refresh();
     }
 }

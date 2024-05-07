@@ -12,13 +12,13 @@ public partial class PageMain : ContentPage
 
     }
 
-    private async void ContentPage_Loaded(object sender, EventArgs e)
+    private async void ContentPage_Appearing(object sender, EventArgs e)
     {
-		Burger burger = (await db.GetAllBurgers()).FirstOrDefault();
+        Burger burger = (await db.GetAllBurgers()).FirstOrDefault();
 
         if (burger != null)
-		{
-			BindingContext = burger;
-		}
+        {
+            BindingContext = burger;
+        }
     }
 }

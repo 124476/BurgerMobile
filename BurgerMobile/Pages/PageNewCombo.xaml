@@ -2,23 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgerMobile.Pages.PageNewCombo"
-             Title="PageNewCombo"
-             Loaded="ContentPage_Loaded">
+             Title="ВИЛКА И НОЖ"
+             Appearing="ContentPage_Appearing">
     <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="Title" FontSize="17" HorizontalOptions="Center"/>
+        <Label Text="Название" FontSize="17" HorizontalOptions="Center"/>
         <Entry x:Name="BTitle" FontSize="17"></Entry>
-        <Label Text="Sum" FontSize="17" HorizontalOptions="Center"/>
+        <Label Text="Цена" FontSize="17" HorizontalOptions="Center"/>
         <Entry x:Name="BSum" FontSize="17"></Entry>
-        <Label Text="Burgers" FontSize="17" HorizontalOptions="Center"></Label>
+        <Label Text="Бургеры" FontSize="17" HorizontalOptions="Center"></Label>
         <CollectionView x:Name="ListBurgers" SelectionMode="Single" SelectionChanged="ListBurgers_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Title}" FontSize="17"></Label>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="*" FontSize="17" Margin="10,13,0,0"></Label>
+                        <Label Text="{Binding Title}" FontSize="17" Margin="10,10,0,0"></Label>
+                    </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
         <Picker x:Name="ComboBurgers" SelectedIndexChanged="ComboBurgers_SelectedIndexChanged" FontSize="17" ItemDisplayBinding="{Binding Title}"></Picker>
-        <Button Text="Сохранить" FontSize="17" Clicked="Button_Clicked"></Button>
+        <Button Text="Сохранить" FontSize="17" Clicked="Button_Clicked" Margin="0,5,0,5"></Button>
+        <Button Text="Удалить" FontSize="17" Clicked="Del_Clicked"  x:Name="Del" Margin="0,0,0,5"></Button>
         <Button Text="Назад" FontSize="17" Clicked="Back_Clicked" x:Name="Back"></Button>
     </VerticalStackLayout>
 </ContentPage>

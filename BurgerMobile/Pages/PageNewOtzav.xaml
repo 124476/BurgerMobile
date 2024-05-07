@@ -2,11 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgerMobile.Pages.PageNewOtzav"
-             Title="PageNewOtzav">
+             Title="ВИЛКА И НОЖ">
     <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="Text" FontSize="17" HorizontalOptions="Center"/>
+        <Label Text="Текст" FontSize="17" HorizontalOptions="Center"/>
         <Entry x:Name="BText" FontSize="17"></Entry>
-        <Button Text="Сохранить" FontSize="17" Clicked="Save_Clicked"  x:Name="Save"></Button>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <ImageButton Clicked="ButtonOne_Clicked"  x:Name="ButtonOne" Source="zvezdano.png" WidthRequest="50" HeightRequest="50"></ImageButton>
+            <ImageButton Clicked="ButtonTwo_Clicked"  x:Name="ButtonTwo" Source="zvezdano.png" WidthRequest="50" HeightRequest="50"></ImageButton>
+            <ImageButton Clicked="ButtonTree_Clicked" x:Name="ButtonTree" Source="zvezdano.png" WidthRequest="50" HeightRequest="50"></ImageButton>
+            <ImageButton Clicked="ButtonFour_Clicked"  x:Name="ButtonFour" Source="zvezdano.png" WidthRequest="50" HeightRequest="50"></ImageButton>
+            <ImageButton Clicked="ButtonFive_Clicked"  x:Name="ButtonFive" Source="zvezdano.png" WidthRequest="50" HeightRequest="50"></ImageButton>
+        </StackLayout>
+        <Button Text="Сохранить" FontSize="17" Clicked="Save_Clicked"  x:Name="Save" Margin="0,5,0,5"></Button>
         <Button Text="Назад" FontSize="17" Clicked="Back_Clicked"  x:Name="Back"></Button>
     </VerticalStackLayout>
 </ContentPage>

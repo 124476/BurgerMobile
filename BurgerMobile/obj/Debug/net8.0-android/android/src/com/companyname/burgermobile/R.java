@@ -11493,12 +11493,12 @@ public final class R {
     public static final int btn_radio_off_to_on_mtrl_animation=0x7f07007e;
     public static final int btn_radio_on_mtrl=0x7f07007f;
     public static final int btn_radio_on_to_off_mtrl_animation=0x7f070080;
-    public static final int design_fab_background=0x7f070081;
-    public static final int design_ic_visibility=0x7f070082;
-    public static final int design_ic_visibility_off=0x7f070083;
-    public static final int design_password_eye=0x7f070084;
-    public static final int design_snackbar_background=0x7f070085;
-    public static final int dotnet_bot=0x7f070086;
+    public static final int defultburger=0x7f070081;
+    public static final int design_fab_background=0x7f070082;
+    public static final int design_ic_visibility=0x7f070083;
+    public static final int design_ic_visibility_off=0x7f070084;
+    public static final int design_password_eye=0x7f070085;
+    public static final int design_snackbar_background=0x7f070086;
     public static final int ic_arrow_back_black_24=0x7f070087;
     public static final int ic_call_answer=0x7f070088;
     public static final int ic_call_answer_low=0x7f070089;
@@ -11594,6 +11594,8 @@ public final class R {
     public static final int test_level_drawable=0x7f0700e3;
     public static final int tooltip_frame_dark=0x7f0700e4;
     public static final int tooltip_frame_light=0x7f0700e5;
+    public static final int zvezdano=0x7f0700e6;
+    public static final int zvezdayes=0x7f0700e7;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

@@ -3,22 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgerMobile.Pages.PageMain"
              Title="ВИЛКА И НОЖ"
-             Loaded="ContentPage_Loaded">
+             Appearing="ContentPage_Appearing">
     <VerticalStackLayout>
-        <Label 
-            Text="Главная страница" FontSize="19"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Grid>
+        <Grid Margin="0,15,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <StackLayout Grid.Column="0">
-                <Label Text="{Binding Title}" FontSize="17"></Label>
-                <Label Text="{Binding Description}" FontSize="17"></Label>
+            <Image Source="{Binding BPhoto}" Grid.Column="0" Margin="10,10,10,10"></Image>
+            <StackLayout Grid.Column="1">
+                <Label Text="{Binding Title}" FontSize="30" Padding="10,15,0,0"></Label>
+                <Label Text="{Binding Description}" FontSize="15" Padding="10,10,0,0"></Label>
             </StackLayout>
-            <Image Source="{Binding BPhoto}" Grid.Column="1" WidthRequest="200"></Image>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
